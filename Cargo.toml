@@ -7,4 +7,9 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4.5.1"
-tokio = "1.37.0"
+[dependencies.tokio]
+version="1.37.0"
+features=[
+    "macros",
+    "rt-multi-thread"
+]
