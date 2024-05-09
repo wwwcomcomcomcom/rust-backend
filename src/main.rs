@@ -7,8 +7,8 @@ async fn greet(req:HttpRequest) -> impl Responder {
 
 async fn health_check() -> impl Responder {
     //HttpResponse::Ok().finish()
-    // HttpResponse::Ok()
-    HttpResponse::Ok().body("Server is alive!")
+    HttpResponse::Ok()
+    // HttpResponse::Ok().body("Server is alive!")
 }
 
 #[tokio::main]
