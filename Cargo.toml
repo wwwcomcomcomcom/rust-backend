@@ -7,6 +7,10 @@ edition = "2021"
 path = "src/lib.rs"
 name = "rust_backend"
 
+#[[bin]]
+#path = "src/main.rs"
+#name = "rust_backend"
+
 [dependencies]
 actix-web = "4.5.1"
 [dependencies.tokio]
@@ -15,5 +19,8 @@ features=[
     "macros",
     "rt-multi-thread"
 ]
+
+[dev-dependencies]
+reqwest = "0.12.4"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
